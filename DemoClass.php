@@ -41,4 +41,15 @@ class DemoClass
         return array_sum($this->foo_array);
     }
 
+    public function sortFoo()
+    {
+        $temp_array = $this->foo_array;
+        if (sort($temp_array)) {
+            $this->foo_array = $temp_array;
+            return $this->foo_array;
+        } else {
+            throw new Exception("Unsortable array was unsortable!");
+        }
+    }
+
 }
