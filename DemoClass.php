@@ -29,7 +29,7 @@ class DemoClass
      */
     public function setFoo(array $new_foo_array)
     {
-        $this->foo_array = $new_foo_array
+        $this->foo_array = $new_foo_array;
     }
 
     /**
