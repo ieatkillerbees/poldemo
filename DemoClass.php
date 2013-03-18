@@ -1,6 +1,7 @@
 <?php
 
-class DemoClass {
+class DemoClass
+{
 
     public $foo_array;
 
@@ -10,7 +11,7 @@ class DemoClass {
      */
     public function __construct(array $foo_array = [])
     {
-          $this->foo_array = $foo_array;
+        $this->foo_array = $foo_array;
     }
 
     /**
@@ -22,9 +23,22 @@ class DemoClass {
         return $this->foo_array;
     }
 
+    /**
+     * Set the foo array.
+     * @param array $new_foo_array
+     */
     public function setFoo(array $new_foo_array)
     {
         $this->foo_array = $new_foo_array
+    }
+
+    /**
+     * Return the sum of numbers in foo_array
+     * @return number
+     */
+    public function sumFoo()
+    {
+        return array_sum($this->foo_array);
     }
 
 }
