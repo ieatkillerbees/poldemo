@@ -56,4 +56,13 @@ class DemoClass
         }
     }
 
+    /**
+     * This does nothing.
+     * @return null
+     */
+    public function doNothing()
+    {
+        return null;
+    }
+
 }
