@@ -41,6 +41,10 @@ class DemoClass
         return array_sum($this->foo_array);
     }
 
+    /**
+     * This needs doc too!
+     * @return array
+     */
     public function sortFoo()
     {
         $temp_array = $this->foo_array;
